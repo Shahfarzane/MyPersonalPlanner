@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eH0-9v-Blj">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add New Day View Controller-->
+        <scene sceneID="Hh4-zX-fn8">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="eH0-9v-Blj" customClass="AddNewDayViewController" customModule="My_Personal_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ckp-7c-Qej">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhJ-EA-gaJ" customClass="PopupView" customModule="My_Personal_Planner" customModuleProvider="target">
+                                <rect key="frame" x="20" y="350" width="374" height="252"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a new day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BL-4r-e3V">
+                                        <rect key="frame" x="8" y="8" width="358" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="1" height="-1"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ysZ-3m-LTq">
+                                        <rect key="frame" x="8" y="45" width="358" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="AF1-mW-qzi"/>
+                                            <constraint firstAttribute="width" constant="358" id="sx3-Kt-OcW"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG5-lf-yom" customClass="AppUIButton" customModule="My_Personal_Planner" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="200" width="100" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelPressed:" destination="eH0-9v-Blj" eventType="touchUpInside" id="jDX-Gy-sqA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoG-q9-rEt" customClass="AppUIButton" customModule="My_Personal_Planner" customModuleProvider="target">
+                                        <rect key="frame" x="266" y="200" width="100" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="saveButtonPressed:" destination="eH0-9v-Blj" eventType="touchUpInside" id="dho-Wz-xVx"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sIq-el-z9l">
+                                        <rect key="frame" x="8" y="83" width="358" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ysZ-3m-LTq" firstAttribute="leading" secondItem="xhJ-EA-gaJ" secondAttribute="leading" constant="8" id="4oX-ps-Vsp"/>
+                                    <constraint firstItem="ysZ-3m-LTq" firstAttribute="top" secondItem="xhJ-EA-gaJ" secondAttribute="top" constant="45" id="56G-O3-7Rk"/>
+                                    <constraint firstAttribute="trailing" secondItem="ysZ-3m-LTq" secondAttribute="trailing" constant="8" id="Nol-8U-at8"/>
+                                    <constraint firstItem="ysZ-3m-LTq" firstAttribute="top" secondItem="1BL-4r-e3V" secondAttribute="bottom" constant="16" id="Oew-uf-Pxw"/>
+                                    <constraint firstItem="ysZ-3m-LTq" firstAttribute="leading" secondItem="1BL-4r-e3V" secondAttribute="leading" id="TKi-zS-5Rp"/>
+                                    <constraint firstAttribute="trailing" secondItem="ysZ-3m-LTq" secondAttribute="trailing" constant="8" id="afI-St-0EV"/>
+                                    <constraint firstItem="ysZ-3m-LTq" firstAttribute="trailing" secondItem="1BL-4r-e3V" secondAttribute="trailing" id="jvV-ko-Ff8"/>
+                                    <constraint firstItem="ysZ-3m-LTq" firstAttribute="leading" secondItem="xhJ-EA-gaJ" secondAttribute="leading" constant="8" id="pUJ-7Q-6Xg"/>
+                                    <constraint firstItem="sIq-el-z9l" firstAttribute="leading" secondItem="xhJ-EA-gaJ" secondAttribute="leading" constant="8" id="qiy-NR-m8d"/>
+                                    <constraint firstAttribute="trailing" secondItem="sIq-el-z9l" secondAttribute="trailing" constant="8" id="uUF-PK-MSE"/>
+                                    <constraint firstItem="sIq-el-z9l" firstAttribute="top" secondItem="ysZ-3m-LTq" secondAttribute="bottom" constant="8" id="wZR-k1-Z7h"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12573366116751272" green="0.12573366116751272" blue="0.12573366116751272" alpha="0.40491224315068491" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6d0-pq-MB9" firstAttribute="bottom" secondItem="xhJ-EA-gaJ" secondAttribute="bottom" constant="260" id="AjE-W5-eAJ"/>
+                            <constraint firstItem="xhJ-EA-gaJ" firstAttribute="leading" secondItem="Ckp-7c-Qej" secondAttribute="leadingMargin" id="XRW-Lk-wwC"/>
+                            <constraint firstItem="xhJ-EA-gaJ" firstAttribute="trailing" secondItem="Ckp-7c-Qej" secondAttribute="trailingMargin" id="q2n-Wx-BvN"/>
+                            <constraint firstItem="xhJ-EA-gaJ" firstAttribute="top" secondItem="6d0-pq-MB9" secondAttribute="top" constant="306" id="uoe-ry-GOI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6d0-pq-MB9"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="xG5-lf-yom" id="5bi-Bf-y4T"/>
+                        <outlet property="save" destination="qoG-q9-rEt" id="e7T-yI-gmh"/>
+                        <outlet property="subTitletext" destination="sIq-el-z9l" id="h5D-cq-7tL"/>
+                        <outlet property="titleLabel" destination="1BL-4r-e3V" id="cle-uZ-vWA"/>
+                        <outlet property="titletext" destination="ysZ-3m-LTq" id="t8X-7X-kPS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1x-Vv-r8F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7.2463768115942031" y="61.607142857142854"/>
+        </scene>
+    </scenes>
+</document>

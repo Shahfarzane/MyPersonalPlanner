@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C78FDF502260901D00EB35B0 /* ActivitiesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C78FDF4F2260901D00EB35B0 /* ActivitiesViewController.storyboard */; };
+		C78FDF54226090A900EB35B0 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FDF53226090A900EB35B0 /* ActivitiesViewController.swift */; };
+		C78FDF562260A00800EB35B0 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FDF552260A00800EB35B0 /* MockData.swift */; };
+		C78FDF592260A11300EB35B0 /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FDF582260A11300EB35B0 /* DayModel.swift */; };
+		C78FDF5E2260A1FC00EB35B0 /* ActivityTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FDF5D2260A1FC00EB35B0 /* ActivityTypeEnum.swift */; };
+		C78FDF602260A33B00EB35B0 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FDF5F2260A33B00EB35B0 /* ActivityModel.swift */; };
+		C78FDF622260F5A500EB35B0 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FDF612260F5A500EB35B0 /* HeaderTableViewCell.swift */; };
+		C78FDF642261C92900EB35B0 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FDF632261C92900EB35B0 /* ActivityTableViewCell.swift */; };
+		C78FDF662261DD7700EB35B0 /* UITableViewCellExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FDF652261DD7700EB35B0 /* UITableViewCellExtentions.swift */; };
+		C78FDF6B226474D100EB35B0 /* AddNewDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FDF6A226474D100EB35B0 /* AddNewDayViewController.swift */; };
+		C78FDF6D2264756600EB35B0 /* AddNewDayViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C78FDF6C2264756600EB35B0 /* AddNewDayViewController.storyboard */; };
+		C78FDF6F226488CA00EB35B0 /* UIViewControllerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FDF6E226488CA00EB35B0 /* UIViewControllerExtention.swift */; };
+		C78FDF7122648B5700EB35B0 /* UITextFieldExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FDF7022648B5700EB35B0 /* UITextFieldExtention.swift */; };
+		C79961A2225C999E00B8CFEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79961A1225C999E00B8CFEB /* AppDelegate.swift */; };
+		C79961A9225C999F00B8CFEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C79961A8225C999F00B8CFEB /* Assets.xcassets */; };
+		C79961AC225C999F00B8CFEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79961AA225C999F00B8CFEB /* LaunchScreen.storyboard */; };
+		C79961B6225CB3BE00B8CFEB /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79961B5225CB3BE00B8CFEB /* TripModel.swift */; };
+		C79961B8225CB3D400B8CFEB /* TripFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79961B7225CB3D400B8CFEB /* TripFunctions.swift */; };
+		C79961BA225CB82500B8CFEB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79961B9225CB82500B8CFEB /* Data.swift */; };
+		C79961BE225CBCE600B8CFEB /* TripsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79961BD225CBCE600B8CFEB /* TripsViewController.storyboard */; };
+		C79961C0225CBD0100B8CFEB /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79961BF225CBD0100B8CFEB /* TripsViewController.swift */; };
+		C79961C2225CC58C00B8CFEB /* TripsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79961C1225CC58C00B8CFEB /* TripsTableViewCell.swift */; };
+		C79961C5225CCC7900B8CFEB /* UIViewExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79961C4225CCC7900B8CFEB /* UIViewExtentions.swift */; };
+		C79961C8225CD8C300B8CFEB /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79961C7225CD8C300B8CFEB /* Theme.swift */; };
+		C79961CD225CDB9000B8CFEB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C79961CC225CDB9000B8CFEB /* Colors.xcassets */; };
+		C79961CF225CEBAA00B8CFEB /* UIButtonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79961CE225CEBAA00B8CFEB /* UIButtonExtention.swift */; };
+		C79961D1225DD0C700B8CFEB /* AddTripViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79961D0225DD0C700B8CFEB /* AddTripViewController.storyboard */; };
+		C79961D4225DD10B00B8CFEB /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79961D3225DD10B00B8CFEB /* AddTripViewController.swift */; };
+		C79961D6225DD9D400B8CFEB /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79961D5225DD9D400B8CFEB /* PopupView.swift */; };
+		C79961DA225DDC1000B8CFEB /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79961D9225DDC1000B8CFEB /* AppButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C78FDF4F2260901D00EB35B0 /* ActivitiesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivitiesViewController.storyboard; sourceTree = "<group>"; };
+		C78FDF53226090A900EB35B0 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		C78FDF552260A00800EB35B0 /* MockData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		C78FDF582260A11300EB35B0 /* DayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayModel.swift; sourceTree = "<group>"; };
+		C78FDF5D2260A1FC00EB35B0 /* ActivityTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTypeEnum.swift; sourceTree = "<group>"; };
+		C78FDF5F2260A33B00EB35B0 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		C78FDF612260F5A500EB35B0 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		C78FDF632261C92900EB35B0 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		C78FDF652261DD7700EB35B0 /* UITableViewCellExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtentions.swift; sourceTree = "<group>"; };
+		C78FDF6A226474D100EB35B0 /* AddNewDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewDayViewController.swift; sourceTree = "<group>"; };
+		C78FDF6C2264756600EB35B0 /* AddNewDayViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNewDayViewController.storyboard; sourceTree = "<group>"; };
+		C78FDF6E226488CA00EB35B0 /* UIViewControllerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtention.swift; sourceTree = "<group>"; };
+		C78FDF7022648B5700EB35B0 /* UITextFieldExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtention.swift; sourceTree = "<group>"; };
+		C799619E225C999E00B8CFEB /* My Personal Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Personal Planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C79961A1225C999E00B8CFEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C79961A8225C999F00B8CFEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C79961AB225C999F00B8CFEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C79961AD225C999F00B8CFEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C79961B5225CB3BE00B8CFEB /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
+		C79961B7225CB3D400B8CFEB /* TripFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunctions.swift; sourceTree = "<group>"; };
+		C79961B9225CB82500B8CFEB /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		C79961BD225CBCE600B8CFEB /* TripsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripsViewController.storyboard; sourceTree = "<group>"; };
+		C79961BF225CBD0100B8CFEB /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
+		C79961C1225CC58C00B8CFEB /* TripsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableViewCell.swift; sourceTree = "<group>"; };
+		C79961C4225CCC7900B8CFEB /* UIViewExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtentions.swift; sourceTree = "<group>"; };
+		C79961C7225CD8C300B8CFEB /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		C79961C9225CD8EB00B8CFEB /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		C79961CC225CDB9000B8CFEB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		C79961CE225CEBAA00B8CFEB /* UIButtonExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtention.swift; sourceTree = "<group>"; };
+		C79961D0225DD0C700B8CFEB /* AddTripViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddTripViewController.storyboard; sourceTree = "<group>"; };
+		C79961D3225DD10B00B8CFEB /* AddTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripViewController.swift; sourceTree = "<group>"; };
+		C79961D5225DD9D400B8CFEB /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		C79961D9225DDC1000B8CFEB /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C799619B225C999E00B8CFEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C78FDF4E22608FFD00EB35B0 /* ActivitiesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C78FDF4F2260901D00EB35B0 /* ActivitiesViewController.storyboard */,
+				C78FDF53226090A900EB35B0 /* ActivitiesViewController.swift */,
+				C78FDF612260F5A500EB35B0 /* HeaderTableViewCell.swift */,
+				C78FDF632261C92900EB35B0 /* ActivityTableViewCell.swift */,
+			);
+			path = ActivitiesViewController;
+			sourceTree = "<group>";
+		};
+		C78FDF572260A10300EB35B0 /* Day */ = {
+			isa = PBXGroup;
+			children = (
+				C78FDF582260A11300EB35B0 /* DayModel.swift */,
+			);
+			path = Day;
+			sourceTree = "<group>";
+		};
+		C78FDF5A2260A19F00EB35B0 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				C78FDF5D2260A1FC00EB35B0 /* ActivityTypeEnum.swift */,
+				C78FDF5F2260A33B00EB35B0 /* ActivityModel.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		C78FDF672264747F00EB35B0 /* AddDayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C78FDF6A226474D100EB35B0 /* AddNewDayViewController.swift */,
+				C78FDF6C2264756600EB35B0 /* AddNewDayViewController.storyboard */,
+			);
+			path = AddDayViewController;
+			sourceTree = "<group>";
+		};
+		C7996195225C999E00B8CFEB = {
+			isa = PBXGroup;
+			children = (
+				C79961A0225C999E00B8CFEB /* My Personal Planner */,
+				C799619F225C999E00B8CFEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C799619F225C999E00B8CFEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C799619E225C999E00B8CFEB /* My Personal Planner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C79961A0225C999E00B8CFEB /* My Personal Planner */ = {
+			isa = PBXGroup;
+			children = (
+				C79961C6225CD8A600B8CFEB /* Resources */,
+				C79961B3225CB38F00B8CFEB /* Model */,
+				C79961BB225CBC8400B8CFEB /* Views */,
+				C79961A1225C999E00B8CFEB /* AppDelegate.swift */,
+				C79961A8225C999F00B8CFEB /* Assets.xcassets */,
+				C79961AA225C999F00B8CFEB /* LaunchScreen.storyboard */,
+				C79961AD225C999F00B8CFEB /* Info.plist */,
+			);
+			path = "My Personal Planner";
+			sourceTree = "<group>";
+		};
+		C79961B3225CB38F00B8CFEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C78FDF5A2260A19F00EB35B0 /* Activity */,
+				C78FDF572260A10300EB35B0 /* Day */,
+				C79961B9225CB82500B8CFEB /* Data.swift */,
+				C78FDF552260A00800EB35B0 /* MockData.swift */,
+				C79961B4225CB39E00B8CFEB /* Trip */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C79961B4225CB39E00B8CFEB /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				C79961B5225CB3BE00B8CFEB /* TripModel.swift */,
+				C79961B7225CB3D400B8CFEB /* TripFunctions.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		C79961BB225CBC8400B8CFEB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C78FDF672264747F00EB35B0 /* AddDayViewController */,
+				C78FDF4E22608FFD00EB35B0 /* ActivitiesViewController */,
+				C79961D2225DD0D200B8CFEB /* AddTripViewController */,
+				C79961BC225CBC8F00B8CFEB /* TripsViewController */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C79961BC225CBC8F00B8CFEB /* TripsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C79961BD225CBCE600B8CFEB /* TripsViewController.storyboard */,
+				C79961C1225CC58C00B8CFEB /* TripsTableViewCell.swift */,
+				C79961BF225CBD0100B8CFEB /* TripsViewController.swift */,
+			);
+			path = TripsViewController;
+			sourceTree = "<group>";
+		};
+		C79961C3225CCC2F00B8CFEB /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				C79961C4225CCC7900B8CFEB /* UIViewExtentions.swift */,
+				C79961CE225CEBAA00B8CFEB /* UIButtonExtention.swift */,
+				C78FDF652261DD7700EB35B0 /* UITableViewCellExtentions.swift */,
+				C78FDF6E226488CA00EB35B0 /* UIViewControllerExtention.swift */,
+				C78FDF7022648B5700EB35B0 /* UITextFieldExtention.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		C79961C6225CD8A600B8CFEB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C79961C3225CCC2F00B8CFEB /* Extentions */,
+				C79961C7225CD8C300B8CFEB /* Theme.swift */,
+				C79961C9225CD8EB00B8CFEB /* Quicksand-Regular.ttf */,
+				C79961CC225CDB9000B8CFEB /* Colors.xcassets */,
+				C79961D5225DD9D400B8CFEB /* PopupView.swift */,
+				C79961D9225DDC1000B8CFEB /* AppButton.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C79961D2225DD0D200B8CFEB /* AddTripViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C79961D0225DD0C700B8CFEB /* AddTripViewController.storyboard */,
+				C79961D3225DD10B00B8CFEB /* AddTripViewController.swift */,
+			);
+			path = AddTripViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C799619D225C999E00B8CFEB /* My Personal Planner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C79961B0225C999F00B8CFEB /* Build configuration list for PBXNativeTarget "My Personal Planner" */;
+			buildPhases = (
+				C799619A225C999E00B8CFEB /* Sources */,
+				C799619B225C999E00B8CFEB /* Frameworks */,
+				C799619C225C999E00B8CFEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My Personal Planner";
+			productName = "My Personal Planner";
+			productReference = C799619E225C999E00B8CFEB /* My Personal Planner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7996196225C999E00B8CFEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = ShahinFarzane;
+				TargetAttributes = {
+					C799619D225C999E00B8CFEB = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = C7996199225C999E00B8CFEB /* Build configuration list for PBXProject "My Personal Planner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7996195225C999E00B8CFEB;
+			productRefGroup = C799619F225C999E00B8CFEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C799619D225C999E00B8CFEB /* My Personal Planner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C799619C225C999E00B8CFEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C79961AC225C999F00B8CFEB /* LaunchScreen.storyboard in Resources */,
+				C79961CD225CDB9000B8CFEB /* Colors.xcassets in Resources */,
+				C78FDF502260901D00EB35B0 /* ActivitiesViewController.storyboard in Resources */,
+				C79961BE225CBCE600B8CFEB /* TripsViewController.storyboard in Resources */,
+				C79961D1225DD0C700B8CFEB /* AddTripViewController.storyboard in Resources */,
+				C79961A9225C999F00B8CFEB /* Assets.xcassets in Resources */,
+				C78FDF6D2264756600EB35B0 /* AddNewDayViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C799619A225C999E00B8CFEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C78FDF662261DD7700EB35B0 /* UITableViewCellExtentions.swift in Sources */,
+				C79961D6225DD9D400B8CFEB /* PopupView.swift in Sources */,
+				C79961C2225CC58C00B8CFEB /* TripsTableViewCell.swift in Sources */,
+				C79961C8225CD8C300B8CFEB /* Theme.swift in Sources */,
+				C79961DA225DDC1000B8CFEB /* AppButton.swift in Sources */,
+				C78FDF5E2260A1FC00EB35B0 /* ActivityTypeEnum.swift in Sources */,
+				C78FDF6B226474D100EB35B0 /* AddNewDayViewController.swift in Sources */,
+				C78FDF54226090A900EB35B0 /* ActivitiesViewController.swift in Sources */,
+				C78FDF7122648B5700EB35B0 /* UITextFieldExtention.swift in Sources */,
+				C78FDF562260A00800EB35B0 /* MockData.swift in Sources */,
+				C79961B6225CB3BE00B8CFEB /* TripModel.swift in Sources */,
+				C79961C5225CCC7900B8CFEB /* UIViewExtentions.swift in Sources */,
+				C78FDF6F226488CA00EB35B0 /* UIViewControllerExtention.swift in Sources */,
+				C78FDF592260A11300EB35B0 /* DayModel.swift in Sources */,
+				C78FDF622260F5A500EB35B0 /* HeaderTableViewCell.swift in Sources */,
+				C78FDF602260A33B00EB35B0 /* ActivityModel.swift in Sources */,
+				C79961A2225C999E00B8CFEB /* AppDelegate.swift in Sources */,
+				C79961D4225DD10B00B8CFEB /* AddTripViewController.swift in Sources */,
+				C79961CF225CEBAA00B8CFEB /* UIButtonExtention.swift in Sources */,
+				C79961B8225CB3D400B8CFEB /* TripFunctions.swift in Sources */,
+				C78FDF642261C92900EB35B0 /* ActivityTableViewCell.swift in Sources */,
+				C79961BA225CB82500B8CFEB /* Data.swift in Sources */,
+				C79961C0225CBD0100B8CFEB /* TripsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C79961AA225C999F00B8CFEB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C79961AB225C999F00B8CFEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C79961AE225C999F00B8CFEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C79961AF225C999F00B8CFEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C79961B1225C999F00B8CFEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FVY8MAVTLV;
+				INFOPLIST_FILE = "My Personal Planner/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ShahinFarzane.se.My-Personal-Planner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C79961B2225C999F00B8CFEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FVY8MAVTLV;
+				INFOPLIST_FILE = "My Personal Planner/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ShahinFarzane.se.My-Personal-Planner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7996199225C999E00B8CFEB /* Build configuration list for PBXProject "My Personal Planner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C79961AE225C999F00B8CFEB /* Debug */,
+				C79961AF225C999F00B8CFEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C79961B0225C999F00B8CFEB /* Build configuration list for PBXNativeTarget "My Personal Planner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C79961B1225C999F00B8CFEB /* Debug */,
+				C79961B2225C999F00B8CFEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7996196225C999E00B8CFEB /* Project object */;
+}
